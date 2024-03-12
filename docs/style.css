@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+.header{
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.889);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+    width: 100vw;
+}
+.header .logo_name{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    height: 92vh;
+}
+
+.container .left{
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0.889);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.middle{
+    width: 500px;
+    height: 100%;
+    background-color: #222;
+    overflow: auto;
+}
+.sidebar{
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.chat-top{
+    width: 100%;
+    height: 130px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    position: sticky;
+    top: 0px;
+}
+.myheader{
+    color: #fff;
+    font-size: larger;
+    display: flex;
+    background-color: #222;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: 63px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+ul li{
+    color: #fff;
+    width: 94%;
+    margin: 2%;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+li:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+.dps{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticks{
+    color: rgb(109, 214, 250);
+}
+input{
+    margin: 0px 5px;
+    width: 98%;
+    height: 63px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: large;
+    border-bottom: 1px solid gray;
+    background-color: #484545ac;
+}
+input:focus{
+    border: none;
+    border-bottom: 5px solid rgb(0, 255, 13);
+}
+
+.resizer{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: col-resize;
+    background-color: #000000;
+}
+
+.container .right{
+    background-color: #222;
+    height: 100%;
+    flex-grow: 1;
+    padding: 3% 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Starting{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container .right h2{
+    color: white;
+    letter-spacing: 2px;
+}
+.whatsappLogo{
+    color: gray;
+}
+.container .right p{
+    color: gray;
+}
+.top, .down{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-icon{
+    padding-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.left-icon:hover{
+    background-color: rgba(128, 128, 128, 0.396);
+    border-radius: 10px;
+}
+i{
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(53, 53, 53);
+    border-radius: 5px;
+    color: rgb(2, 167, 2);
+}
